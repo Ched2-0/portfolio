@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Two Wheel Glory!
+        </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="banner">
+            Andy's Motorbikes
+            <div style="font-size: 52px;">Two Wheel Glory!</div>
+        </div>
+        <div class="header">
+            <a href="home.html">Home</a> / <a href="bikes.html">Bikes</a> / <a href="whatson.html">Whats On</a>  / <a href="prices&contact.html">Prices & Contact</a> 
+             / <a href="externallinks.html">Support Groups</a> / <a href="merchshop.html">Merch Shop</a>
+        </div>
+        <div class="content">
+            <p>Andys Motorbikes<br/>
+                <div class="item">
+                    <img src="images/tshirt.jpg" alt="T-shirt" width="200">
+                    <h2>T-shirt</h2>
+                    <p>$20</p>
+                    <button onclick="addToCart('T-shirt', 20)">Add to Cart</button>
+                  </div>
+                  <div class="item">
+                    <img src="images/hat.jpg" alt="Hat" width="200">
+                    <h2>Hat</h2>
+                    <p>$15</p>
+                    <button onclick="addToCart('Hat', 15)">Add to Cart</button>
+                  </div>
+                  <div class="item">
+                    <img src="images/mug.jpg" alt="mug" width="200">
+                    <h2>Motorbike Mug</h2>
+                    <p>$10</p>
+                    <button onclick="addToCart('Mug', 10)">Add to Cart</button>
+                  </div>
+                  <div id="cart">
+                    <h2>Shopping Cart</h2>
+                    <p>Total: $<span id="total">0</span></p>
+                  </div>
+                </div>
+              
+                <script>
+                  let total = 0;
+              
+                  function addToCart(item, price) {
+                    total += price;
+                    document.getElementById('total').textContent = total;
+                  }
+                </script>
+            </p>
+        </div>
+        <div class="footer">
+            <a href="prices&contact.html"> Contact Info </a><br>
+            <p>
+                Address: xxx-xxx-xxx<br>
+                        xxx-xxx<br>
+                        xxx
+            </p>
+        </div>
+    </body>
+
+
+</html>

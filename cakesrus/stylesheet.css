@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #01302b;
+    color: white;
+}
+a {
+    color: white;
+}
+.header {
+    height: 65px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+.banner {
+    background: url(images/image8.jpg);
+    background-size: contain;
+    width: auto;
+    height: 400px;
+    text-align: center;
+    font-size: 52px;
+    padding-top: 75px;
+    color: rgb(8, 0, 0);
+}
+.content {
+    min-height: 200px;
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #001b19;
+    color: white;
+}
+.footer {
+    width: auto;
+    height: 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}

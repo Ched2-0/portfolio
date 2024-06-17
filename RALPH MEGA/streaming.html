@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming | Ralph Mega's Online Gaming Emporium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="retro.html">Retro</a></li>
+            <li><a href="streaming.html">Streaming</a></li>
+            <li><a href="loyalty.html">Loyalty</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Streaming</h1>
+    </header>
+
+    <section class="image-section">
+        <img src="streaminggames.jfif" alt="Streamable Games Collage" style="height: 200px; width: 300px;">
+    </section>
+
+    <section class="subscription-options">
+        <!-- Subscription options -->
+        <div class="subscription">
+            <h2>Monthly Subscription</h2>
+            <p>Price: $9.99/month</p>
+            <!-- Loyalty Program Checkbox -->
+            <label><input type="checkbox" id="loyaltyCheckbox"> Member of Loyalty Program?</label><br>
+            <button onclick="addToCart('Monthly Subscription', 9.99)">Subscribe Now</button>
+        </div>
+        <!-- Additional subscription options go here -->
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><h2>Contact Us</h2></li>
+                <li><p>Email: info@ralphmega.com</p></li>
+                <li><p>Phone: 1-800-GAME-EMP</p></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

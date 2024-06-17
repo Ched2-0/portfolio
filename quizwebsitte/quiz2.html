@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Monarchy Quiz</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="quiz1.html">Music Quiz</a></li>
+          <li><a href="quiz2.html">History Quiz</a></li>
+        </ul>
+      </nav>
+    <form id="quiz-form">
+      <div>
+        <label>1. Who was the first Tudor monarch of England?</label><br>
+        <input type="text" id="answer1">
+      </div>
+      <div>
+        <label>2. What is the official title of the ruler of Japan?</label><br>
+        <input type="text" id="answer2">
+      </div>
+      <div>
+        <label>3. Who was the last Russian tsar?</label><br>
+        <input type="text" id="answer3">
+      </div>
+      <div>
+        <label>4. Who is the current queen of the United Kingdom?</label><br>
+        <input type="text" id="answer4">
+      </div>
+      <div>
+        <label>5. Which monarch was known as the "Sun King" of France?</label><br>
+        <input type="text" id="answer5">
+      </div>
+      <button type="button" onclick="checkAnswers()">Submit Answers</button>
+    </form>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const answers = ["Henry VII", "Emperor", "Nicholas II", "Elizabeth II", "Louis XIV"];
+      const userAnswers = [
+        document.getElementById("answer1").value.trim(),
+        document.getElementById("answer2").value.trim(),
+        document.getElementById("answer3").value.trim(),
+        document.getElementById("answer4").value.trim(),
+        document.getElementById("answer5").value.trim()
+      ];
+
+      let correctCount = 0;
+      for (let i = 0; i < answers.length; i++) {
+        if (userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+          correctCount++;
+        }
+      }
+
+      document.getElementById("result").textContent = `You got ${correctCount} out of ${answers.length} correct.`;
+    }
+  </script>
+  </main>
+</body>
+</html>

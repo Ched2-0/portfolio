@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph Mega's Online Gaming Emporium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="retro.html">Retro</a></li>
+            <li><a href="streaming.html">Streaming</a></li>
+            <li><a href="loyalty.html">Loyalty</a></li>
+            <li><button onclick="switchToPolish()">Switch to Polish</button></li>
+            <li><button onclick="switchToEnglish()">Switch to English</button></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Ralph Mega's Online Gaming Emporium</h1>
+    </header>
+    
+    <section class="image-section">
+        <img src="game_collage.jpg" alt="Game Collage">
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: info@ralphmega.com</p>
+        <p>Phone: 1-800-GAME-EMP</p>
+        <form action="#" method="POST">
+            <label for="inquiry">Send us an inquiry:</label><br>
+            <textarea id="inquiry" name="inquiry" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><h2>Contact Us</h2></li>
+                <li><p>Email: info@ralphmega.com</p></li>
+                <li><p>Phone: 1-800-GAME-EMP</p></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        function switchToPolish() {
+            // Replace English text with Polish text
+            document.querySelector("li:first-child a").textContent = "Strona główna";
+            document.querySelector("li:nth-child(2) a").textContent = "Retro";
+            document.querySelector("li:nth-child(3) a").textContent = "Streaming";
+            document.querySelector("li:nth-child(4) a").textContent = "Lojalność";
+            document.querySelector("button:nth-child(5)").textContent = "Przełącz na angielski";
+            document.querySelector("button:nth-child(6)").textContent = "Switch to English";
+        }
+
+        function switchToEnglish() {
+            // Replace Polish text with English text
+            document.querySelector("li:first-child a").textContent = "Home";
+            document.querySelector("li:nth-child(2) a").textContent = "Retro";
+            document.querySelector("li:nth-child(3) a").textContent = "Streaming";
+            document.querySelector("li:nth-child(4) a").textContent = "Loyalty";
+            document.querySelector("button:nth-child(5)").textContent = "Switch to Polish";
+            document.querySelector("button:nth-child(6)").textContent = "Switch to English";
+        }
+    </script>
+</body>
+</html>

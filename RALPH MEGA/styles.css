@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+body, h1, h2, p, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Image section styling */
+.image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contact section styling */
+.contact-section {
+    margin: 20px;
+}
+
+.contact-section h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px; /* Padding */
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #555; /* Hover color */
+}
